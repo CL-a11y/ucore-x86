@@ -5,7 +5,6 @@ lab1:
 	cd lab1_result && make grade CC=gcc-4.8
 
 lab2:
-	sed -i 's/lab1/lab2/g' .github/classroom/autograding.json
 	cd lab2_result && make qemu CC=gcc-4.8 > .qemu.out
 	cat ./lab2_result/.qemu.out
 	cd lab2_result && make grade CC=gcc-4.8
